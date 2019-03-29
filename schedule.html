@@ -1,0 +1,356 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>计科1701课表(模拟数据)</title>
+</head>
+<style>
+    .week {
+        display: flex;
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(196, 196, 101, 0.19);
+    }
+
+    .mouth {
+        width: 35px;
+        height: 55px;
+    }
+
+    .week .day {
+        width: 55px;
+        height: 55px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .day span, .lesson-time span {
+        color: #454D5D;
+        font-size: 11px;
+    }
+
+
+    table {
+        color: #1A344A;
+        border-collapse: collapse;
+        font-size: 14px;
+        table-layout: fixed;
+        word-break: break-all;
+    }
+
+    table td {
+        margin-right: 5px;
+    }
+
+    .today {
+        background-color: #E7F0F7;
+        border-radius: 10px;
+    }
+
+    .lesson {
+        height: 70px;
+        display: flex;
+        border-bottom: 1px dashed rgba(196, 196, 101, 0.19);
+    }
+
+    .lesson .lesson-time {
+        width: 35px;
+    }
+
+    .lesson td {
+        width: 55px;
+    }
+
+    .lesson-box {
+        /*定位脱流*/
+        position: relative;
+    }
+
+    .lesson-box-in {
+        padding: 5px;
+        height: 120px;
+        position: absolute;
+        color: white;
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px darkgray
+    }
+</style>
+<body align='center'>
+<table class="class-schedule" align="center">
+    <tr class="week">
+        <td class="mouth center">
+            <div>3</div>
+            <div>月</div>
+        </td>
+        <td>
+            <div class="day center today">
+                <div>周一</div>
+                <span>03/25</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周二</div>
+                <span>03/26</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周三</div>
+                <span>03/27</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周四</div>
+                <span>03/28</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周五</div>
+                <span>03/29</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周六</div>
+                <span>03/30</span>
+            </div>
+        </td>
+        <td>
+            <div class="day center">
+                <div>周七</div>
+                <span>03/31</span>
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>1</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #73EC53">
+                数字逻辑
+                <br>
+                @知行楼307
+                <br>
+                (1-14)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #73EC53">
+                数字逻辑
+                <br>
+                @知行楼307
+                <br>
+                (1-14)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FE9EDE">
+                大学英语(四)
+                <br>
+                @逸夫楼403
+                <br>
+                (3-17)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FFA17B">
+                计算机网络
+                <br>
+                @致远楼502
+                <br>
+                (3-17)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FE9EDE">
+                大学英语(四)
+                <br>
+                @逸夫楼403
+                <br>
+                (3-17)周
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>2</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>3</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #84B2FF">
+                网页制作
+                <br>
+                @知行楼306
+                <br>
+                (1-12)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #ADF031">
+                概率论与数理统计
+                <br>
+                @致远楼510
+                <br>
+                单周
+            </div>
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #84B2FF">
+                大学体育(四)
+                <br>
+                @训练馆
+                <br>
+                (1-16)周
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>4</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>5</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FE9EDE">
+                马克思主义基本原理
+                @明德楼205
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #84B2FF">
+                网页制作
+                <br>
+                @知行楼306
+                <br>
+                (1-12)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #ffcc68">
+                数据库应用技术
+                @明理楼511
+                <br>
+                (1-12)周
+            </div>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FFA17B">
+                计算机网络
+                <br>
+                @致远楼502
+                <br>
+                (3-17)周
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>6</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>7</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #FFA17B">
+                计算机网络
+                <br>
+                @致远楼502
+                <br>
+                (3-17)周
+            </div>
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #84B2FF">
+                网页制作
+                <br>
+                @知行楼306
+                <br>
+                (1-12)周
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>8</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>9</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #ff7075">
+                计算机网络
+                <br>
+                @致远楼502
+                <br>
+                (3-17)周
+            </div>
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+        </td>
+        <td class="lesson-box">
+            <div class="lesson-box-in" style="background-color: #ffcc68">
+                计算机网络
+                <br>
+                @致远楼502
+                <br>
+                (3-17)周
+            </div>
+        </td>
+    </tr>
+    <tr class="lesson">
+        <td class="lesson-time center">
+            <div>10</div>
+            <span>08:00</span>
+            <span>08:45</span>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
