@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TonyStark</title>
+    <style type="text/css">
+        body {
+            margin: 50px;
+            min-width: 950px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 23px;
+            line-height: 1.5;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        #main {
+            width: 100%;
+            height: 500px;
+            font-size: 16px;
+        }
+
+        #right {
+            width: 250px;
+            margin-left: -250px;
+        }
+
+        #content {
+            margin: 0 250px 0 0;
+        }
+
+        .col {
+            text-align: left;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            float: left;
+            height: 500px;
+        }
+
+        .col img {
+            float: left;
+            margin: 20px;
+        }
+
+        .mr-daohang {
+            background: #BB8788;
+            height: 30px;
+        }
+
+        .mr-hov {
+            text-align: center;
+            color: #6F6363;
+        }
+
+        .mr-hov1 {
+            color: #786767;
+            font-family: 仿宋,serif;
+            text-decoration: none;
+            position: fixed;
+        }
+        a {
+            text-decoration: none;
+            color: #270606;
+            font-size: 20px;
+        }
+
+        .mr-name {
+            font-size: 20px;
+        }
+        .bg{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -999;
+        }
+        .gtx-image{
+            width: 150px;
+            height: 220px;
+        }
+        .gtx1 {
+            background-image: url("./newPicture/gtx1.jpg");
+        }
+        .gtx1:hover{
+            background-image: url("./newPicture/gtx2.jpg");
+        }
+        .gtx2 {
+            background-image: url("./newPicture/gtx2.jpg");
+        }
+        .gtx2:hover{
+            background-image: url("./newPicture/gtx1.jpg");
+        }
+        .gtx3 {
+            background-image: url("./newPicture/gtx3.jpg");
+        }
+        .gtx3:hover{
+            background-image: url("./newPicture/gtx2.jpg");
+        }
+        .movies{
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            padding: 0 200px 0 200px;
+        }
+        .movie-box{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<img class="bg" src="newPicture/bgphoto1.jpg"/>
+<div class="mr-daohang">
+    <li class="mr-hov">钢铁侠</li>
+</div>
+<div id="container">
+    <div id="main" class="col">
+        <div id="content">
+            <img src="newPicture/gtxdtt.jpg">
+            <div class="mr-txt">
+                <a name="jianjie"><a href="daohang"><strong>个人简介：</strong></a></a><br>
+                身份：钢铁侠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现任扮演者：小罗伯特·唐尼<br>真实身份：企业家托尼·斯塔克&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;战斗技能：钢铁战甲+无人机军团<br>致命弱点：战甲造反、能源耗尽<br>
+                　　 他是亿万富翁、花花公子、天才发明工业家，漫威宇宙中最具科技范的霸道总裁。故事始于2008年的第一部《钢铁侠》，就是这部影片的票房爆发，才有了之后漫威电
+                影宇宙兴起的套路，同时帮助小罗伯特·唐尼重回人生巅峰，这个角色完全配得上像片中一样登上《时代》杂志封面。
+            </div>
+            <hr>
+        </div>
+        <div class="mr-txt">
+            <a name="movie"><a href="daohang">作品</a></a></div>
+        <div class="movies">
+            <div class="movie-box">
+                <div class="gtx1 gtx-image"></div>
+                <span class="mr-name">钢铁侠1</span>
+            </div>
+            <div class="movie-box">
+                <div class="gtx2 gtx-image"></div>
+                <span class="mr-name">钢铁侠2</span>
+            </div>
+            <div class="movie-box">
+                <div class="gtx3 gtx-image"></div>
+                <span class="mr-name">钢铁侠3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="right" class="col">
+    <div class="mr-hov1">
+        <a href="#jianjie">个人简介</a><br>
+        <a href="#movie">作品</a><br>
+        <a href="page.html">返回主页</a>
+    </div>
+</div>
+</body>
+</html>
