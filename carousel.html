@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div id="carousel-example" class="carousel slide" data-ride="carousel">
+    <!-- 控制点点 -->
+    <ol class="carousel-indicators">
+        <!--  data-target:控制的轮播id，data-slide-to：滑动到第几张      -->
+        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example" data-slide-to="1"></li>
+        <li data-target="#carousel-example" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播内容 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="https://k.zol-img.com.cn/sjbbs/7692/a7691501_s.jpg" alt="..">
+        </div>
+        <div class="item">
+            <img src="https://k.zol-img.com.cn/sjbbs/7692/a7691398_s.jpg" alt="...">
+        </div>
+        <div class="item">
+            <img src="https://k.zol-img.com.cn/sjbbs/7692/a7691400_s.jpg" alt="...">
+        </div>
+    </div>
+    <!--左边箭头-->
+    <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <!--右边边箭头-->
+    <a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+</div>
+</body>
+<script src="https://cdn.bootcdn.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</html>

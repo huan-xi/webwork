@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+</head>
+
+<style>
+    .login-box {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 23px;
+        width: 400px;
+        height: 300px;
+        margin-top: 50px;
+        padding-top: 10px;
+    }
+
+    .login-form {
+        margin-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        /*width: 400px;*/
+    }
+
+    .login-box .title {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .user-name label,.user-pass label {
+        display: inline-block;
+        width: 70px;
+    }
+
+    .user-name input,.user-pass input {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        display: inline-block;
+        width: 218px;
+    }
+    .user-pass{
+        margin-top: 10px;
+    }
+    .page {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-login {
+        margin: 12px auto 16px !important;
+        display: inline-block;
+        font-weight: 400;
+        padding: 6px 15px;
+        font-size: 12px;
+        border-radius: 4px;
+        color: #495060;
+        width: 100%;
+    }
+</style>
+<script>
+    function login() {
+        window.location = '//www.baidu.com'
+        var user = document.getElementById("user")
+        var password = document.getElementById("password");
+        if (user.value !== 'hanchao' && password.value !== '201706030119') {
+            alert('您的输入的账户或密码错误！');
+        } else {
+            alert('登录成功！');
+
+        }
+    }
+</script>
+<body>
+<div id="Layer1" style="position:fixed;z-index:-100; left:0; top:0; width:100%; height:100%">
+    <img src="./bg1.jpg" width="100%" height="100%"></div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="'#E11316'" size="+5" face="幼圆">温馨的家</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="#877B7C" size="+1" face="幼圆"><a href="Untitled-5.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="Untitled-3.html">登入</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Untitled-7.html">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="#">问题反馈</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Untitled-2.html">留言</a></font></p>
+<div class="page">
+
+    <div class="login-box">
+        <div class="title">
+            <span>用户登入</span>
+        </div>
+        <form class="login-form">
+            <div class="user-name">
+                <label for="user">用户名：</label>
+                <input type="text" name="" id="user" placeholder="邮箱/手机/用户名">
+            </div>
+            <div class="user-pass">
+                <label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+                <input type="password" name="" id="password" placeholder="请输入密码">
+            </div>
+            <input class="btn-login" type="submit" name="" value="登录" onClick="login()">
+            <div>
+                <label for="remember-me"><input id="remember-me" type="checkbox">记住密码</label>
+                <a style="float: right" href="file:///C:/Users/lenovo/Desktop/image/Untitled-7.html">注册</a>
+            </div>
+        </form>
+    </div>
+    <div class="login-links">
+
+        <br/>
+    </div>
+</div>
+
+</body>
+</html>
